@@ -186,7 +186,7 @@ RUN \
   rm -Rf /build-out/usr/local/man
 
 # nodejs builder
-FROM ghcr.io/linuxserver/baseimage-debian:bookworm AS nodebuilder
+FROM ghcr.io/linuxserver/baseimage-debian:trixie AS nodebuilder
 ARG KCLIENT_RELEASE
 
 RUN \
@@ -225,7 +225,7 @@ RUN \
   rm -f package-lock.json
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-debian:bookworm
+FROM ghcr.io/linuxserver/baseimage-debian:trixie
 
 # set version label
 ARG BUILD_DATE
