@@ -2,7 +2,7 @@
 
 FROM node:12-buster AS wwwstage
 
-ARG KASMWEB_RELEASE="ae1e012fe34e5dd29478575d2a1253dfa916ed24"
+ARG KASMWEB_RELEASE="46412d23aff1f45dffa83fafb04a683282c8db58"
 
 RUN \
   echo "**** build clientside ****" && \
