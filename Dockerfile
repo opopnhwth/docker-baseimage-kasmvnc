@@ -29,7 +29,7 @@ RUN \
 
 FROM ghcr.io/linuxserver/baseimage-arch:latest AS buildstage
 
-ARG KASMVNC_COMMIT="663b6d6a0bdd4638bff981c75a522056aaaa1c2e"
+ARG KASMVNC_COMMIT="e04731870baebd2784983fb48197a2416c7d3519"
 
 COPY --from=wwwstage /build-out /www
 
