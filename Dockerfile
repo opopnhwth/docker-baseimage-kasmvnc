@@ -2,7 +2,7 @@
 
 FROM node:12-buster AS wwwstage
 
-ARG KASMWEB_RELEASE="46412d23aff1f45dffa83fafb04a683282c8db58"
+ARG KASMWEB_RELEASE="ae1e012fe34e5dd29478575d2a1253dfa916ed24"
 
 RUN \
   echo "**** build clientside ****" && \
@@ -29,7 +29,7 @@ RUN \
 
 FROM ghcr.io/linuxserver/baseimage-arch:latest AS buildstage
 
-ARG KASMVNC_COMMIT="e04731870baebd2784983fb48197a2416c7d3519"
+ARG KASMVNC_COMMIT="663b6d6a0bdd4638bff981c75a522056aaaa1c2e"
 
 COPY --from=wwwstage /build-out /www
 
